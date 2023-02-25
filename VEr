@@ -1,0 +1,33 @@
+/*    parseInt   */
+
+// note that a whole number is returned, so it will round the number
+console.log(parseInt('51.023124'));
+
+// parseInt will 'cut off' any part of the string which is not a number
+console.log(parseInt('5adfe1234'));
+
+// When the string starts with non number NaN is returned
+console.log(parseInt('z123'));
+
+console.log('--------');
+
+/*    parseFloat   */
+
+// parses the string into a number and keeping the precision of the number
+console.log(typeof parseFloat('1.12321423'));
+
+// parseFloat will 'cut off' any part of the string which is not a number
+console.log(parseFloat('5.5abc'));
+
+console.log('--------');
+
+/*   + operator   */
+
+let myString = '12345'
+
+console.log(typeof +myString);
+
+let myOtherString = '10ab'
+
+// + operator will not cut off any 'non number' string part and will return NaN
+console.log(+myOtherString);
